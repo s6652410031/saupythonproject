@@ -1,27 +1,20 @@
 import math
-# inputRadius
 
 def inputRadius():
-    r = float(input('Radius: '))
-    return r
+    return float(input("พื้นที่วงกลม : "))
 
-# calAreaCircle
+
 def calAreaCircle(r):
-    area = math.pi * r ** 2
-    return math.pi * r ** 2
+    return math.pi * r**2
 
-# calRoundCircle
-def calRoundCircle(r):
-    rd = 2 * math.pi * r
-    return rd
+def calRoundCirle(r):
+    return 2 * math.pi * r
 
-# calCubeCircle
-def calCubeCircle(r):
-    c = (4/3) * math.pi * r ** 3
-    return c
+def calCuberCirle(r):
+    return 4/3 * math.pi * math.pow(r,3)
 
-#showResult
-radius = inputRadius()
-print(f'Area of Circle: {area:.2f}')
-print(f'Round of Circle: {rd:.2f}')
-print(f'Volume of Circle: {c:.2f}')
+def showResult():
+    r = inputRadius()
+    print(f'พื้นที่วงกลมเป็น {calAreaCircle(r):.4f} เส้นรอบวงกลมเป็น {calRoundCirle(r):.4f} ปริมาตรทรงกลมเป็น {calCuberCirle(r):.4f}  ☆*: .｡. o(≧▽≦)o .｡.:*☆')
+
+showResult()
